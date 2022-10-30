@@ -1,31 +1,16 @@
-package chap10;
-
-class First {
-
-    public First() {
-        System.out.println("Hello from First");
-    }
-}
-
-class Second extends First {
-
-    Second() {
-        super();
-        System.out.println("Hello from Second");
-    }
-}
-
-class Third extends Second {
-
-    Third() {
-        super();
-        System.out.println("Hello from Third");
-    }
-}
+package chap09;
 
 public class Example13 {
 
+    static void inc(int i) {
+        i++;
+        System.out.println("呼び出し先のi:" + i);
+    }
+
     public static void main(String[] args) {
-        Third t = new Third();
+        int i = 10;
+        System.out.println("呼び出し元のi:" + i);
+        inc(i);
+        System.out.println("呼び出し元のi:" + i);
     }
 }

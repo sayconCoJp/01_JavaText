@@ -1,8 +1,9 @@
 package chap09;
 
-public class Example11 {
+public class Example12 {
 
     static void show(NewEngineer1 se) {
+        se.name += "_san";
         System.out.println(se.id + " : " + se.name);
     }
 
@@ -10,10 +11,7 @@ public class Example11 {
         NewEngineer1 yamazaki = new NewEngineer1();
         yamazaki.id = 1;
         yamazaki.name = "yamazaki";
-        NewEngineer1 imai = new NewEngineer1();
-        imai.id = 2;
-        imai.name = "imai";
         show(yamazaki);
-        show(imai);       
+        System.out.println(yamazaki.name);
     }
 }

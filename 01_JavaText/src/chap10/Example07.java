@@ -1,14 +1,17 @@
-package chap10;
+package chap09;
 
 public class Example07 {
 
     public static void main(String[] args) {
-
-        Bicycle bi1 = new Bicycle(110);
-        Bicycle bi2 = new Bicycle(110);
-        Bicycle bi3 = new Bicycle(119);
-
-        System.out.println(bi1.equals(bi2));
-        System.out.println(bi2.equals(bi3));
+        NewEngineer2[] se = new NewEngineer2[3];
+        se[0].id = 1;
+        se[0].name = "tabuchi";
+        se[1].id = 2;
+        se[1].name = "shinohara";
+        se[2].id = 3;
+        se[2].name = "kokubun";
+        for (int i = 0; i < se.length; i++) {
+            se[i].show();
+        }
     }
 }

@@ -1,12 +1,10 @@
-package chap10;
+package chap09;
 
 public class Example01 {
 
     public static void main(String[] args) {
-        Engineer se = new Engineer();
-        se.id = 1;
-        se.name = "今井";
-        se.skill = "Java";
-        System.out.println("私は" + se.name + "。私のスキルは "+ se.skill + " です。");
+        NewEngineer1 se1 = new NewEngineer1();
+        System.out.println(se1.id);
+        System.out.println(se1.name);
     }
 }

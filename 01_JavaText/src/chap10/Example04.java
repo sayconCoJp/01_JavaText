@@ -1,10 +1,11 @@
-package chap10;
+package chap09;
 
 public class Example04 {
 
     public static void main(String[] args) {
-        Vehicle v = new Airplane();
-        Airplane a = (Airplane) v;
-        a.fly();
+        NewEngineer2 yamazaki = new NewEngineer2();
+        yamazaki.id = 1;
+        yamazaki.name = "yamazaki";
+        System.out.println(yamazaki);
     }
 }

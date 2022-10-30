@@ -1,19 +1,9 @@
-package chap10;
-
-class Surfing extends Vehicle {
-
-    @Override
-    void run() {
-        System.out.println("I'm surfing.");
-    }
-}
+package chap09;
 
 public class Example09 {
 
     public static void main(String[] args) {
-        Vehicle[] vs = {new PatrolCar(), new Locket(), new Ship(), new Surfing()};
-        for (Vehicle v : vs) {
-            v.run();
-        }
+        String str1 = null;
+        System.out.println(str1.length());
     }
 }

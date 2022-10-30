@@ -1,9 +1,13 @@
-package chap10;
+package chap09;
 
 public class Example02 {
 
     public static void main(String[] args) {
-        Vehicle v1 = new Car();
-        v1.run();
+        NewEngineer1 se1;
+        se1 = new NewEngineer1();
+        se1.id = 1;
+        se1.name = "yamada";
+        System.out.println(se1.id);
+        System.out.println(se1.name);
     }
 }
